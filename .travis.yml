@@ -1,10 +1,4 @@
-language: java
-install: mvn install clean --fail-never --quiet -DskipTests=true -Dinvoker.skip=true
-script: mvn verify
+language: ruby
+rvm:
+  - "1.8.7"
 
-notifications:
-  email: false
-
-branches:
-  except:
-    - gh-pages
